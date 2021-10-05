@@ -2,21 +2,21 @@
 성남산업진흥원 주관 ICT 기업 인턴 교육 프로그램 과제 수행
 
 ### 프로젝트 개요
-- Amazon Web Service(AWS)를 이용한 2-tier 웹 아키텍처 구현
-- Public 서브넷의 웹서버(EC2)와 Private 서브넷의 DB(RDS) 연동
-- Wordpress를 기반으로 웹페이지 제작
-- 원본 웹서버와 복제본을 ELB(ALB)로 Load Balancing
-- Cloudwatch로 RDS 모니터링
+- `Amazon Web Service(AWS)`를 이용한 `2-tier 웹 아키텍처` 구현
+- Public 서브넷의 `웹서버(EC2)`와 Private 서브넷의 `DB(RDS)` 연동
+- `Wordpress`를 기반으로 웹페이지 제작
+- 원본 웹서버와 복제본을 `ELB(ALB)`로 `Load Balancing`
+- `Cloudwatch`로 `RDS 모니터링`
 <div align="center">
   <img width="600" src="https://user-images.githubusercontent.com/75527311/134180369-1b08be6e-8c32-4ed0-8f73-dd629485c3fe.png">
 </div>
 <br>
 
 ### 구현 방법 요약
-- VPC 생성 후 퍼블릭 서브넷에 EC2 인스턴스 생성 ➡ Apache 서버, MySQL 클라이언트, php, Wordpress 설치
-- RDS 전용 프라이빗 서브넷 생성 및 RDS 설정
-- Wordpress 활성화 및 테마 적용
-- EC2 백업 이미지를 생성하여 복제 ➡ ELB로 두 EC2를 연결하여 로드밸런싱
+- VPC 생성 후 퍼블릭 서브넷에 `EC2 인스턴스` 생성 ➡ Apache 서버, MySQL 클라이언트, php, Wordpress 설치
+- RDS 전용 프라이빗 서브넷 생성 및 `RDS 설정`
+- `Wordpress 활성화` 및 테마 적용
+- `EC2 백업 이미지`를 생성하여 `복제` ➡ `ELB`로 두 EC2를 연결하여 로드밸런싱
 - Cloudwatch에 대시보드에 RDS 지표별 그래프 추가
 <br>
 
